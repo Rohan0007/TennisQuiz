@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#000000</item>
+        <item name="android:textColorHint">#FFFFFF</item>
+    </style>
+
+    <!-- Wrap Content for basic application -->
+    <style name="WrapContent">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!-- Match Parent for basic application -->
+    <style name="MatchParent">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!-- Custom style for the intro -->
+    <style name="intro">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">#7F000000</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <!-- Custom style for all the questions -->
+    <style name="question">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">#7F000000</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <!-- Custom style for all the options (radio buttons/checkboxes) -->
+    <style name="option">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#7F000000</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:buttonTint">#FFFFFF</item>
+    </style>
+
+</resources>

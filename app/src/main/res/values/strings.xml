@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tennis Quiz</string>
+    <!-- Main Screen Intro -->
+    <string name="intro">Tennis Trivia Quiz\n5 points for every correct answer</string>
+
+    <!-- Quiz Questions -->
+    <string name="Q1">1. Who won the men\’s singles championship in Australian Open 2017?</string>
+    <string name="Q2">2. Who won the women\’s singles championship in Australian Open 2017?</string>
+    <string name="Q3">3. Who was the runner up in men\’s singles championship in Australian Open 2017?</string>
+    <string name="Q4">4. Who was the runner up in women\’s singles championship in Australian Open 2017?</string>
+    <string name="Q5">5. Which of these players (more than one correct) have won all four grand slams in Men\'s Singles?</string>
+    <string name="Q6">6. Which of these players (more than one correct) have won all four grand slams in Women\'s Singles?</string>
+    <string name="Q7">7. Which grand slam is named after a World War I pilot named Roland Garros ?</string>
+</resources>

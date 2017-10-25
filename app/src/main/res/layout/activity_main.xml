@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/MatchParent">
+
+    <RelativeLayout
+        style="@style/MatchParent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context="com.example.android.tennisquiz.MainActivity">
+
+        <ImageView
+            style="@style/WrapContent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back9" />
+
+        <TextView
+            android:id="@+id/intro"
+            style="@style/intro"
+            android:text="@string/intro" />
+
+        <ScrollView
+            style="@style/MatchParent"
+            android:layout_below="@id/intro">
+
+            <LinearLayout
+                style="@style/MatchParent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/question"
+                    android:text="@string/Q1" />
+
+                <!-- Correct answer for this question is Roger Federer -->
+
+                <RadioGroup
+                    style="@style/MatchParent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        style="@style/option"
+                        android:text="Novak Djokovic" />
+
+                    <RadioButton
+                        android:id="@+id/a1"
+                        style="@style/option"
+                        android:text="Roger Federer" />
+
+                    <RadioButton
+                        style="@style/option"
+                        android:text="Andy Murray" />
+
+                    <RadioButton
+                        style="@style/option"
+                        android:text="Rafael Nadal" />
+
+                </RadioGroup>
+
+                <TextView
+                    style="@style/question"
+                    android:text="@string/Q2" />
+
+                <!-- Correct answer for this question is Serena Williams -->
+
+                <RadioGroup
+                    style="@style/MatchParent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        style="@style/option"
+                        android:text="Garbine Muguruza" />
+
+                    <RadioButton
+                        style="@style/option"
+                        android:text="Svetlana Kuznetsova" />
+
+                    <RadioButton
+                        android:id="@+id/a2"
+                        style="@style/option"
+                        android:text="Serena Williams" />
+
+                    <RadioButton
+                        style="@style/option"
+                        android:text="Angelique Kerber" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    style="@style/question"
+                    android:text="@string/Q3" />
+
+                <!-- Correct answer for this question is Rafael Nadal -->
+
+                <RadioGroup
+                    style="@style/MatchParent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        style="@style/option"
+                        android:text="Novak Djokovic" />
+
+                    <RadioButton
+                        style="@style/option"
+                        android:text="Roger Federer" />
+
+                    <RadioButton
+                        style="@style/option"
+                        android:text="Andy Murray" />
+
+                    <RadioButton
+                        android:id="@+id/a3"
+                        style="@style/option"
+                        android:text="Rafael Nadal" />
+
+                </RadioGroup>
+
+                <TextView
+                    style="@style/question"
+                    android:text="@string/Q4" />
+
+                <!-- Correct answer for this question is Venus Williams -->
+
+                <RadioGroup
+                    style="@style/MatchParent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        style="@style/option"
+                        android:text="Coco Vandeweghe" />
+
+                    <RadioButton
+                        android:id="@+id/a4"
+                        style="@style/option"
+                        android:text="Venus Williams" />
+
+                    <RadioButton
+                        style="@style/option"
+                        android:text="Simona Halep" />
+
+                    <RadioButton
+                        style="@style/option"
+                        android:text="Karolina Pliskova" />
+
+                </RadioGroup>
+
+                <TextView
+                    style="@style/question"
+                    android:text="@string/Q5" />
+
+                <!-- Correct answers for this question are Rafael Nadal, Roger Federer, Novak Djokovic -->
+
+                <CheckBox
+                    style="@style/option"
+                    android:text="Andy Murray" />
+
+                <CheckBox
+                    android:id="@+id/a5_1"
+                    style="@style/option"
+                    android:text="Rafael Nadal" />
+
+                <CheckBox
+                    android:id="@+id/a5_2"
+                    style="@style/option"
+                    android:text="Roger Federer" />
+
+                <CheckBox
+                    style="@style/option"
+                    android:text="Stan Wawrinka" />
+
+                <CheckBox
+                    android:id="@+id/a5_3"
+                    style="@style/option"
+                    android:text="Novak Djokovic" />
+
+                <CheckBox
+                    style="@style/option"
+                    android:text="Kei Nishikori" />
+
+                <TextView
+                    style="@style/question"
+                    android:text="@string/Q6" />
+
+                <!-- Correct answers for this question are Serena Williams, Maria Sharapova -->
+
+                <CheckBox
+                    android:id="@+id/a6_1"
+                    style="@style/option"
+                    android:text="Serena Williams" />
+
+                <CheckBox
+                    style="@style/option"
+                    android:text="Karolina Pliskova" />
+
+                <CheckBox
+                    android:id="@+id/a6_2"
+                    style="@style/option"
+                    android:text="Maria Sharapova" />
+
+                <CheckBox
+                    style="@style/option"
+                    android:text="Simona Halep" />
+
+                <CheckBox
+                    style="@style/option"
+                    android:text="Angelique Kerber" />
+
+                <CheckBox
+                    style="@style/option"
+                    android:text="Elina Svitolina" />
+
+                <TextView
+                    style="@style/question"
+                    android:text="@string/Q7" />
+
+                <!-- Correct answer for this question is French Open -->
+
+                <EditText
+                    android:id="@+id/a7"
+                    style="@style/option"
+                    android:layout_marginLeft="15dp"
+                    android:hint="Your Answer Here..."
+                    android:inputType="textCapWords" />
+
+                <RelativeLayout style="@style/MatchParent">
+
+                    <Button
+                        style="@style/WrapContent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="60dp"
+                        android:onClick="grade"
+                        android:text="SUBMIT" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
