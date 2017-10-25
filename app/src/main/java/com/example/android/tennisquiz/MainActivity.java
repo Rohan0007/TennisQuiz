@@ -19,8 +19,15 @@ import static com.example.android.tennisquiz.R.id.a4;
 import static com.example.android.tennisquiz.R.id.a5_1;
 import static com.example.android.tennisquiz.R.id.a5_2;
 import static com.example.android.tennisquiz.R.id.a5_3;
+import static com.example.android.tennisquiz.R.id.a5_4;
+import static com.example.android.tennisquiz.R.id.a5_5;
+import static com.example.android.tennisquiz.R.id.a5_6;
 import static com.example.android.tennisquiz.R.id.a6_1;
 import static com.example.android.tennisquiz.R.id.a6_2;
+import static com.example.android.tennisquiz.R.id.a6_3;
+import static com.example.android.tennisquiz.R.id.a6_4;
+import static com.example.android.tennisquiz.R.id.a6_5;
+import static com.example.android.tennisquiz.R.id.a6_6;
 import static com.example.android.tennisquiz.R.id.a7;
 
 public class MainActivity extends AppCompatActivity {
@@ -69,7 +76,11 @@ public class MainActivity extends AppCompatActivity {
         CheckBox box1 = (CheckBox) findViewById(a5_1);
         CheckBox box2 = (CheckBox) findViewById(a5_2);
         CheckBox box3 = (CheckBox) findViewById(a5_3);
-        if (box1.isChecked() && box2.isChecked() && box3.isChecked()) {
+        CheckBox box4 = (CheckBox) findViewById(a5_4);
+        CheckBox box5 = (CheckBox) findViewById(a5_5);
+        CheckBox box6 = (CheckBox) findViewById(a5_6);
+        if (box1.isChecked() && box2.isChecked() && box3.isChecked() && !box4.isChecked()
+                && !box5.isChecked() && !box6.isChecked()) {
             score += 5;
             toast += "\nQ5 is correct";
         } else {
@@ -78,7 +89,12 @@ public class MainActivity extends AppCompatActivity {
 
         box1 = (CheckBox) findViewById(a6_1);
         box2 = (CheckBox) findViewById(a6_2);
-        if (box1.isChecked() && box2.isChecked()) {
+        box3 = (CheckBox) findViewById(a6_3);
+        box4 = (CheckBox) findViewById(a6_4);
+        box5 = (CheckBox) findViewById(a6_5);
+        box6 = (CheckBox) findViewById(a6_6);
+        if (box1.isChecked() && box2.isChecked() && !box3.isChecked() && !box4.isChecked()
+                && !box5.isChecked() && !box6.isChecked()) {
             score += 5;
             toast += "\nQ6 is correct";
         } else {
@@ -86,9 +102,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         EditText text = (EditText) findViewById(a7);
-        String ans = text.getText().toString();
+        String ans = text.getText().toString().trim();
         String correct = "French Open";
-        if (ans.equals(correct)) {
+        if (ans.equalsIgnoreCase(correct)) {
             score += 5;
             toast += "\nQ7 is correct";
         } else {
